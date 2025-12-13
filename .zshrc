@@ -7,8 +7,14 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
+# Ruby / Bundler XDG Compliance
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle/config"
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
+
 # Zsh specific XDG paths
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump"
+
 # HISTORY CONFIG MUST BE HERE (Before plugins load)
 HISTFILE="$XDG_STATE_HOME/zsh/history"
 HISTSIZE=10000
@@ -33,6 +39,10 @@ source "${ZINIT_HOME}/zinit.zsh"
 # -------------------------------
 autoload -Uz compinit
 compinit -d "$ZSH_COMPDUMP"
+
+# FORCE THE CACHE INTO THE TRASH
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/zcompcache"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
