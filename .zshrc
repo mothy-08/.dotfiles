@@ -21,13 +21,6 @@ path=("$HOME/.local/bin" $path)
 export PATH
 
 # -------------------------------
-# 1. Powerlevel10k Instant Prompt
-# -------------------------------
-if [[ -r "${XDG_CACHE_HOME}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# -------------------------------
 # 2. Zinit (Plugin Manager)
 # -------------------------------
 ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
@@ -49,8 +42,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always --icons --gro
 # -------------------------------
 # 4. Plugins
 # -------------------------------
-# Theme
-zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Core
 zinit light-mode for \
@@ -61,12 +52,12 @@ zinit light-mode for \
 # -------------------------------
 # 5. Configs & Tools
 # -------------------------------
-# Powerlevel10k Config
-[[ -f "$XDG_CONFIG_HOME/zsh/.p10k.zsh" ]] && source "$XDG_CONFIG_HOME/zsh/.p10k.zsh"
 
 # Tools
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(starship init zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # -------------------------------
 # 6. Aliases & Binds
@@ -84,3 +75,4 @@ bindkey '^n' history-search-forward
 # 7. Syntax Highlighting (MUST BE LAST)
 # -------------------------------
 zinit light zsh-users/zsh-syntax-highlighting
+
