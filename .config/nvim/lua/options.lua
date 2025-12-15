@@ -12,6 +12,7 @@ o.softtabstop = 4
 o.shiftwidth = 4
 o.wrap = false
 o.signcolumn = "yes"
+o.iskeyword:append("-")
 
 -- search
 o.smartcase = true
