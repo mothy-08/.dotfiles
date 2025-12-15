@@ -9,4 +9,6 @@ vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/vague2k/vague.nvim" },
 	{ src = "https://github.com/christoomey/vim-tmux-navigator" },
+	{ src = "https://github.com/stevearc/conform.nvim" },
+	{ src = "https://github.com/mbbill/undotree" },
 })
