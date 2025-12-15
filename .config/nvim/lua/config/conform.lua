@@ -1,4 +1,5 @@
 require("conform").setup({
+    log_level = vim.log.levels.DEBUG,
 	formatters_by_ft = {
 		lua = { "stylua" },
 		python = { "black" },
@@ -11,8 +12,7 @@ require("conform").setup({
 		html = { "prettierd" },
 	},
 	format_on_save = {
-		timeout_ms = 500,
 		lsp_format = "fallback",
-		async = true,
+		timeout_ms = 500,
 	},
 })
