@@ -54,17 +54,16 @@ brew bundle --file=Brewfile
 Symlink the core configurations.
 
 ```bash
-# Core Configs
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+# Core Configs (Mapped from home/)
+ln -sfn ~/.dotfiles/home/.zshrc ~/.zshrc
+ln -sfn ~/.dotfiles/home/.gitconfig ~/.gitconfig
+ln -sfn ~/.dotfiles/home/.tmux.conf ~/.tmux.conf
 
-# XDG Configs
+# XDG Configs (Mapped from config/)
 mkdir -p ~/.config
-ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
-ln -s ~/.dotfiles/.config/npm ~/.config/npm
-# Note: pnpm config is handled via CLI settings, not a file link yet.
-```
+ln -sfn ~/.dotfiles/config/nvim ~/.config/nvim
+ln -sfn ~/.dotfiles/config/npm ~/.config/npm
+ln -sfn ~/.dotfiles/config/pnpm ~/.config/pnpm
 
 ## ⚙️ Post-Install Configurations
 
