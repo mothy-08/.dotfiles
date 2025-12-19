@@ -11,4 +11,10 @@ vim.pack.add({
 	{ src = "https://github.com/christoomey/vim-tmux-navigator" },
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/mbbill/undotree" },
+	{
+		src = "https://github.com/L3MON4D3/LuaSnip",
+		version = "v2.4.1",
+		data = { build = "make install_jsregexp", dependencies = "rafamadriz/friendly-snippets" },
+	},
+	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 })
