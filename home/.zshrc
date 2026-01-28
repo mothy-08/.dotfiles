@@ -90,3 +90,6 @@ bindkey '^n' history-search-forward
 # -------------------------------
 zinit light zsh-users/zsh-syntax-highlighting
 
+
+# Added by Antigravity
+export PATH="/Users/timothy/.antigravity/antigravity/bin:$PATH"
