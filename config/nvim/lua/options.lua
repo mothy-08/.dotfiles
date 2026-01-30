@@ -13,7 +13,8 @@ o.shiftwidth = 2
 o.wrap = false
 o.signcolumn = "yes"
 o.iskeyword:append("-")
-o.scrolloff = 8
+o.scrolloff = 12
+o.cursorline = true
 
 -- search
 o.smartcase = true
