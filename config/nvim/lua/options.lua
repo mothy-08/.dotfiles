@@ -14,7 +14,9 @@ o.wrap = false
 o.signcolumn = "yes"
 o.iskeyword:append("-")
 o.scrolloff = 12
+o.sidescrolloff = 12
 o.cursorline = true
+o.showmode = false
 
 -- search
 o.smartcase = true
