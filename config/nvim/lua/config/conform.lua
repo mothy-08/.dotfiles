@@ -1,5 +1,5 @@
 require("conform").setup({
-    log_level = vim.log.levels.DEBUG,
+	log_level = vim.log.levels.DEBUG,
 	formatters_by_ft = {
 		lua = { "stylua" },
 		python = { "black" },
@@ -7,6 +7,7 @@ require("conform").setup({
 		typescript = { "prettierd" },
 		javascriptreact = { "prettierd" },
 		typescriptreact = { "prettierd" },
+		vue = { "prettierd" },
 		json = { "prettierd" },
 		css = { "prettierd" },
 		html = { "prettierd" },
