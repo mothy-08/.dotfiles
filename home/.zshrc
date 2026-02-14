@@ -89,7 +89,3 @@ bindkey '^n' history-search-forward
 # 7. Syntax Highlighting (MUST BE LAST)
 # -------------------------------
 zinit light zsh-users/zsh-syntax-highlighting
-
-
-# Added by Antigravity
-export PATH="/Users/timothy/.antigravity/antigravity/bin:$PATH"
