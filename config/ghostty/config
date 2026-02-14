@@ -1,2 +1,3 @@
 theme = Rose Pine
 font-size = 24
+macos-titlebar-style = hidden
