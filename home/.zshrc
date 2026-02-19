@@ -10,7 +10,6 @@ export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-
 # Ruby / Bundler XDG Compliance
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle/config"
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
@@ -77,9 +76,7 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # 6. Aliases & Binds
 # -------------------------------
 alias vim='nvim'
-alias ls='eza --icons --group-directories-first --git'
-alias ll='eza -l --icons --group-directories-first --git'
-alias la='eza -la --icons --group-directories-first --git'
+alias ls='eza -la --icons=always --group-directories-first --git'
 
 bindkey -e
 bindkey '^p' history-search-backward

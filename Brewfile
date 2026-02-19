@@ -23,8 +23,6 @@ brew "ncdu"
 brew "ripgrep"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Simplified and community-driven man pages
-brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -33,4 +31,3 @@ brew "tree"
 brew "zoxide"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
-cask "font-fira-code-nerd-font"
