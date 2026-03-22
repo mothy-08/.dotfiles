@@ -2,9 +2,6 @@ local map = vim.keymap.set
 
 -- basics
 map("n", "<ESC>", ":nohlsearch<CR>", { silent = true })
-map("n", "<leader>o", ":update | :source<CR>")
-map("n", "<leader>q", ":quit<CR>")
-map("n", "<leader>w", ":write<CR>")
 
 -- navigation
 map("n", "<C-h>", "<C-w><C-h>")
