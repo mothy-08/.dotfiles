@@ -1,4 +1,5 @@
-require("blink.cmp").setup({
-	fuzzy = { prebuilt_binaries = { force_version = "v1.9.1" } },
+local cmp = require("blink.cmp")
+cmp.build():pwait()
+cmp.setup({
 	completion = { documentation = { auto_show = true } },
 })

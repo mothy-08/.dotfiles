@@ -11,6 +11,7 @@ local plugins = {
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/mbbill/undotree" },
 	{ src = "https://github.com/saghen/blink.cmp" },
+	{ src = "https://github.com/saghen/blink.lib" },
 }
 
 vim.pack.add(plugins)
