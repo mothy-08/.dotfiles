@@ -2,6 +2,13 @@ config-version = 2
 start-at-login = true
 automatically-unhide-macos-hidden-apps = true
 
+on-window-detected = [
+  {
+    if = 'test %{app-bundle-id} = com.apple.finder || test %{app-bundle-id} = com.abdownloadmanager.desktop',
+    run = 'layout floating'
+  }
+]
+
 [mode.main.binding]
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'
@@ -24,6 +31,11 @@ automatically-unhide-macos-hidden-apps = true
     alt-3 = 'workspace 3'
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
+    alt-0 = 'workspace 0'
 
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
