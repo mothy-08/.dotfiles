@@ -4,7 +4,7 @@ automatically-unhide-macos-hidden-apps = true
 
 on-window-detected = [
   {
-    if = 'test %{app-bundle-id} = com.apple.finder || test %{app-bundle-id} = com.abdownloadmanager.desktop || test %{app-bundle-id} = com.mitchellh.ghostty || test %{app-bundle-id} = com.apple.MobileSMS',
+    if = 'test %{app-bundle-id} = com.apple.finder || test %{app-bundle-id} = com.abdownloadmanager.desktop || test %{app-bundle-id} = com.mitchellh.ghostty || test %{app-bundle-id} = com.apple.MobileSMS || test %{app-bundle-id} = com.apple.Photos || test %{app-bundle-id} = com.hnc.Discord || test %{app-bundle-id} = com.spotify.client || test %{app-bundle-id} = com.apple.reminders || test %{app-bundle-id} = com.apple.ActivityMonitor ',
     run = 'layout floating'
   }
 ]
